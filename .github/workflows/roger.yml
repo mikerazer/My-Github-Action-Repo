@@ -1,4 +1,3 @@
----
 name: hello my workflow
 on:
   push:
@@ -18,7 +17,6 @@ jobs:
       -name: version of python
       -run: docker --version && python --version
 
-        
   
 `
         
