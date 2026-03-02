@@ -1,22 +1,24 @@
 name: hello my workflow
+
 on:
   push:
     branches:
       - main
+
 jobs:
   greet:
     runs-on: ubuntu-latest
     steps:
       - name: say hello to users
         run: echo "hello dosto"
+
       - name: say hello to username
         run: echo "hello $USER"
+
   details:
     runs-on: ubuntu-latest
     steps:
-      -name: version of python
-      -run: docker --version && python --version
-
-  
+      - name: version of docker and python
+        run: docker --version && python3 --version
 `
         
